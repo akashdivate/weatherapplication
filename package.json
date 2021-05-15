@@ -1,0 +1,19 @@
+{
+    "name": "Express_js_demos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node express_hbs_weather_with_fetch_and_other_call/src/app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.0.1",
+        "nodemon": "^2.0.7",
+        "path": "^0.12.7",
+        "postman-request": "^2.88.1-postman.30"
+    }
+}
