@@ -59,7 +59,7 @@ app.get('/weather', (req, res) => {
     // })
 
     if (req.query.area) {
-        geolocat(req.query.area = 'pune', (error, data) => {
+        geolocat(req.query.area, (error, data) => {
             if (!error) {
                 weather_call(data, (weather_error, body) => {
                     if (!weather_error) {
@@ -69,7 +69,7 @@ app.get('/weather', (req, res) => {
                         console.log(body.img)
                         res.send({
                             title: 'weather',
-                            area: 'pune',
+                            area: req.query.area,
                             body
                             // img : body.current.weather_icons[0],
                         })
